@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PitchBooker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="home">Home</string>
+    <string name="loginaccount">Log In Account</string>
+    <string name="login">Log In</string>
+    <string name="profile">Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="forgot_password">Forget Password?</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="ok">OK</string>
+    <string name="menu">Menu</string>
+    <string name="logout">Log Out</string>
+    <string name="sent">Sent</string>
+    <string name="aboutus">About Us</string>
+    <string name="fill_feedback">Fill Feedback</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

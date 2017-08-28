@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+    tools:context="com.example.msi.pitchbooker.Fill_Feedback">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You "
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:textColor="@color/colorDark"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"/>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        float:fletPadding="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:inputType="textMultiLine"
+            android:drawableLeft="@mipmap/ic_fillfeedback"
+            android:drawablePadding="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:id="@+id/et_fillFeedback"
+            android:hint="Fill Feedback"/>
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_green"
+        android:onClick="doSent"
+        android:text="@string/sent"
+        android:textColor="@color/colorDark"
+        android:textSize="26dp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
