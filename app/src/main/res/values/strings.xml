@@ -9,6 +9,7 @@
     <string name="phonenumber">Phone Number</string>
     <string name="password">Password</string>
     <string name="new_password">New Password</string>
+    <string name="conf_password">Confirm Password</string>
     <string name="old_password">Old Password</string>
     <string name="home">Home</string>
     <string name="loginaccount">Log In Account</string>
@@ -26,7 +27,4 @@
     <string name="sent">Sent</string>
     <string name="aboutus">About Us</string>
     <string name="fill_feedback">Fill Feedback</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

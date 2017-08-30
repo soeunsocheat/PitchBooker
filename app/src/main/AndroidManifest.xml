@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".Forget_Password" />
         <activity android:name=".Sign_Up" />
-        <activity android:name=".Change_Password"></activity>
+        <activity android:name=".Change_Password" />
+        <activity android:name=".List_Ball_Field" />
     </application>
 
 </manifest>

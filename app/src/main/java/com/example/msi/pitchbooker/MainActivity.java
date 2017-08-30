@@ -1,6 +1,7 @@
 package com.example.msi.pitchbooker;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -58,17 +59,22 @@ public class MainActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.changepassword:
-                Intent intent1 = new Intent(MainActivity.this, Change_Password.class);
-                startActivity(intent1);
+                Intent intent = new Intent(MainActivity.this, Change_Password.class);
+                startActivity(intent);
                 break;
             case R.id.logout:
 //                SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.pref_app),MODE_PRIVATE);
 //                SharedPreferences.Editor editor = sharedPreferences.edit();
 //                editor.clear();
 //                editor.apply();
-                Intent intent = new Intent(MainActivity.this, Log_In.class);
-                startActivity(intent);
-
+//                Intent intent1 = new Intent(this,Log_In.class);
+//                startActivity(intent1);
+//                finish();
+//                break;
+                Log_In log_in = new Log_In();
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.frame, log_in);
+                fragmentTransaction.commit();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -105,10 +111,8 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.frame, fill_feedback);
             fragmentTransaction.commit();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 }

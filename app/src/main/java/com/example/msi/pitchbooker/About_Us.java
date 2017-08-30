@@ -26,4 +26,5 @@ public class About_Us extends Fragment {
         return inflater.inflate(R.layout.fragment_about__us, container, false);
     }
 
+
 }
