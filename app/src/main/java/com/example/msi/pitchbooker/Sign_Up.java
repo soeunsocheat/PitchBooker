@@ -46,29 +46,31 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
     }
     @Override
     public void onClick(View view) {
-        SharedPreferences preferences = getSharedPreferences(getResources().getString(R.string.data_app), MODE_PRIVATE);
-        if (!et_password.getText().toString().equals(et_confpassword.getText().toString())){
-            Toast.makeText(getApplicationContext(), "Confirm password is incorrect!", Toast.LENGTH_SHORT).show();
-        }else if (et_password.getText().toString().contains(" ")||et_confpassword.getText().toString().contains(" ")){
-            Toast.makeText(getApplicationContext(), "Password is not allow space!", Toast.LENGTH_SHORT).show();
-        }else if (et_password.getText().toString().isEmpty()&& et_confpassword.getText().toString().isEmpty()){
-            Toast.makeText(getApplicationContext(), "Password is Empty!", Toast.LENGTH_SHORT).show();
-        }else if (et_phoneNumber.getText().toString().isEmpty()){
-            Toast.makeText(getApplicationContext(), "Phone Number is Empty!", Toast.LENGTH_SHORT).show();
-        }else {
-            SignUp();
+        switch (view.getId()) {
+            case R.id.btn_createAccount:
+                SharedPreferences preferences = getSharedPreferences(getResources().getString(R.string.data_app), MODE_PRIVATE);
+                if (!et_password.getText().toString().equals(et_confpassword.getText().toString())) {
+                    Toast.makeText(getApplicationContext(), "Confirm password is incorrect!", Toast.LENGTH_SHORT).show();
+                } else if (et_password.getText().toString().contains(" ") || et_confpassword.getText().toString().contains(" ")) {
+                    Toast.makeText(getApplicationContext(), "Password is not allow space!", Toast.LENGTH_SHORT).show();
+                } else if (et_password.getText().toString().isEmpty() && et_confpassword.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Password is Empty!", Toast.LENGTH_SHORT).show();
+                } else if (et_phoneNumber.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Phone Number is Empty!", Toast.LENGTH_SHORT).show();
+                } else {
+                    SignUp();
+                }
         }
     }
 
     private void SignUp(){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "pitchbooker.gicitc.info/customer/register";
-        final SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.data_app),MODE_PRIVATE);
+        String url = "http://pitchbooker.gicitc.info/customer/register";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-//                        Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
                         Gson gson =new Gson();
 
                         try {
@@ -76,19 +78,22 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
 //                            Toast.makeText(getApplicationContext(),"status : "+jsonObject.getBoolean("status"),Toast.LENGTH_LONG).show();
                             LoginResponse loginResponse = gson.fromJson(response,LoginResponse.class);
 //                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
 
                         } catch (JsonSyntaxException e) {
                             e.printStackTrace();
                         }
-                        if(response.contains("true")){
+                        LoginResponse login = gson.fromJson(response, LoginResponse.class);
+                        if(login.isStatus()){
                             SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.data_app),MODE_PRIVATE);
                             SharedPreferences.Editor editor =sharedPreferences.edit();
+                            editor.putString("customer_name", et_username.getText().toString());
+                            editor.putString("customer_password", et_password.getText().toString());
+                            editor.putString("customer_phonenumber", et_phoneNumber.getText().toString());
                             editor.apply();
-                            Toast.makeText(getApplicationContext(),"hello",Toast.LENGTH_LONG).show();
                             finish();
                         }else{
-                            LoginResponse login = gson.fromJson(response,LoginResponse.class);
-                            Toast.makeText(getApplicationContext(),"error",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),login.getMsg(),Toast.LENGTH_LONG).show();
                         }
 
 

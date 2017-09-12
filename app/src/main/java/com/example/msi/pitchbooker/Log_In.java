@@ -26,6 +26,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.msi.pitchbooker.util.AppUtil;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
@@ -73,59 +74,64 @@ public class Log_In extends Fragment implements View.OnClickListener{
                 startActivity(intent);
                 break;
             case R.id.btn_logIn:
-                String url ="pitchbooker.gicitc.info/customer/login_username";
+                RequestQueue queue = Volley.newRequestQueue(getActivity());
+                String url ="http://pitchbooker.gicitc.info/customer/login_username";
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                Toast.makeText(getActivity(),response,Toast.LENGTH_LONG).show();
+                                Gson gson =new Gson();
 
-                StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                        url, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        //Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();
-                        Gson gson = new Gson();
-                        try {
-                            LoginResponse login = gson.fromJson(response, LoginResponse.class);
-                            if(login.isStatus()){
-                                //login success
-                                Home_Screen home_screen = new Home_Screen();
-                                FragmentManager fragmentManager = getFragmentManager();
-                                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                fragmentTransaction.replace(R.id.frame, home_screen);
-                                fragmentTransaction.commit();
-                            }else{
-                                //login failed
-                                Toast.makeText(getContext(), "Password is Incorrect", Toast.LENGTH_LONG).show();
+                                try {
+//                            JSONObject jsonObject = new JSONObject(response);
+//                            Toast.makeText(getApplicationContext(),"status : "+jsonObject.getBoolean("status"),Toast.LENGTH_LONG).show();
+                                    LoginResponse loginResponse = gson.fromJson(response,LoginResponse.class);
+//                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getActivity(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
+
+                                } catch (JsonSyntaxException e) {
+                                    e.printStackTrace();
+                                }
+                                LoginResponse login = gson.fromJson(response, LoginResponse.class);
+                                if(login.isStatus()){
+                                    SharedPreferences sharedPreferences = getActivity().getSharedPreferences(getResources().getString(R.string.data_app),getActivity().MODE_PRIVATE);
+                                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                                    editor.putString("customer_id", login.getCustomer_id()+"");
+                                    editor.putString("customer_name", et_username.getText().toString());
+                                    editor.putString("customer_password", et_password.getText().toString());
+                                    editor.apply();
+
+                                    Profile profile = new Profile();
+                                    FragmentManager fragmentManager = getFragmentManager();
+                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                    fragmentTransaction.replace(R.id.frame, profile);
+                                    fragmentTransaction.commit();
+                                }else{
+                                    Toast.makeText(getActivity(),login.getMsg(),Toast.LENGTH_LONG).show();
+                                }
+
+
                             }
-                        }catch(JsonSyntaxException e){
-                            Log.e("MainActivity", Log.getStackTraceString(e));
-                        }
-                /* ***** use built-in JSONObject of Android system *****
-                try {
-                    JSONObject object = new JSONObject(response);
-                    Toast.makeText(MainActivity.this, "Status: "+object.getBoolean("status"), Toast.LENGTH_LONG).show();
-                    if(object.getBoolean("status")){
-                        //login success
-                    }else{
-                        //login failed
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                */
-
-                    }
-                }, new Response.ErrorListener() {
+                        }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(getContext(), "Error:"+error.getMessage(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(),"a:"+error.getMessage(),Toast.LENGTH_LONG).show();
+
+
                     }
-                }) {
+                }){
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
-                        HashMap<String, String> hashMap = new HashMap<>();
-                        hashMap.put("username",et_username.getText().toString());
-                        hashMap.put("password",et_password.getText().toString());
+                        HashMap<String,String> hashMap = new HashMap<>();
+                        Context ctx = getActivity();
+                        hashMap.put("customer_name",et_username.getText().toString());
+                        hashMap.put("customer_password",et_password.getText().toString());
+                        hashMap.put("customer_device_id", AppUtil.obtainIMEI(ctx));
                         return hashMap;
                     }
                 };
+                queue.add(stringRequest);
         }
     }
 
