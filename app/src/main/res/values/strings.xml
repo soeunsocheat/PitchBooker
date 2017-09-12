@@ -27,4 +27,8 @@
     <string name="sent">Sent</string>
     <string name="aboutus">About Us</string>
     <string name="fill_feedback">Fill Feedback</string>
+    <string name="title_activity_list__ball__field">List_Ball_Field</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="data_app">Data_App</string>
 </resources>

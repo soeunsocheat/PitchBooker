@@ -7,21 +7,99 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/price" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryLight"
         android:orientation="vertical">
-
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Today"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"/>
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnA"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="A"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/sportclub">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnB"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="B"
+                    android:textAllCaps="false"
+                    android:textSize="26dp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sportclub" />
+
+                <Button
+                    android:id="@+id/btnC"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                    android:textAllCaps="false"
+                    android:textSize="26dp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sportclub" />
+
+                <Button
+                    android:id="@+id/btnD"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="D"
+                    android:textAllCaps="false"
+                    android:textSize="26dp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/sportclub" />/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp">
+            android:text="By Day"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,103 +108,81 @@
 
                 <Button
                     android:id="@+id/btn1"
-                    android:text="Mon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
+                    android:text="ច័ន្ទ\n\nMon\n\nkeke"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
                     android:background="@drawable/btn_green_sqare" />
 
                 <Button
                     android:id="@+id/btn2"
                     android:text="Tue"
-                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
                     android:background="@drawable/btn_green_sqare" />
 
                 <Button
                     android:id="@+id/btn3"
                     android:text="Wed"
-                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
                     android:background="@drawable/btn_green_sqare" />
 
                 <Button
                     android:id="@+id/btn4"
                     android:text="THur"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
                     android:background="@drawable/btn_green_sqare" />
 
                 <Button
                     android:id="@+id/btn5"
                     android:text="Fri"
-                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
                     android:background="@drawable/btn_green_sqare" />
 
                 <Button
                     android:id="@+id/btn6"
                     android:text="Sat"
-                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
                     android:background="@drawable/btn_green_sqare" />
 
                 <Button
                     android:id="@+id/btn7"
                     android:text="Sun"
-                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/btn_green_sqare" />
-                <Button
-                    android:id="@+id/btn8"
-                    android:text="Mon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/btn_green_sqare" />
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnA"
-                    android:text="A"
-                    android:textSize="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/btn_green_sqare" />
-
-                <Button
-                    android:id="@+id/btnB"
-                    android:text="B"
-                    android:textSize="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/btn_green_sqare" />
-
-                <Button
-                    android:id="@+id/btnC"
-                    android:text="C"
-                    android:textSize="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/btn_green_sqare" />
-
-                <Button
-                    android:id="@+id/btnD"
-                    android:text="D"
-                    android:textSize="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/btn_green_sqare" />/>
             </LinearLayout>
         </HorizontalScrollView>
     </LinearLayout>
