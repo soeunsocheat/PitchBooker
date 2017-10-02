@@ -70,7 +70,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
                         Gson gson =new Gson();
 
                         try {

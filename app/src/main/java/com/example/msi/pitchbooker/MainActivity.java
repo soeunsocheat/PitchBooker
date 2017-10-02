@@ -64,18 +64,14 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
             case R.id.logout:
-//                SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.pref_app),MODE_PRIVATE);
-//                SharedPreferences.Editor editor = sharedPreferences.edit();
-//                editor.clear();
-//                editor.apply();
-//                Intent intent1 = new Intent(this,Log_In.class);
-//                startActivity(intent1);
+                SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.data_app),MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.clear();
+                editor.apply();
+                Intent intent1 = new Intent(this,Log_In.class);
+                startActivity(intent1);
 //                finish();
 //                break;
-                Log_In log_in = new Log_In();
-                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.frame, log_in);
-                fragmentTransaction.commit();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -90,11 +86,6 @@ public class MainActivity extends AppCompatActivity
             Home_Screen home_screen = new Home_Screen();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, home_screen);
-            fragmentTransaction.commit();
-        } else if (id == R.id.login) {
-            Log_In log_in = new Log_In();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame, log_in);
             fragmentTransaction.commit();
         } else if (id == R.id.profile) {
             Profile profile = new Profile();

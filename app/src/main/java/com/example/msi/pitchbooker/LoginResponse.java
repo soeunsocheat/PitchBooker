@@ -6,7 +6,7 @@ package com.example.msi.pitchbooker;
 
 public class LoginResponse {
     private boolean status;
-    private String msg;
+    private String message;
     private long customer_id;
 
     public boolean isStatus() {
@@ -18,11 +18,11 @@ public class LoginResponse {
     }
 
     public String getMsg() {
-        return msg;
+        return message;
     }
 
     public void setMsg(String msg) {
-        this.msg = msg;
+        this.message = msg;
     }
 
     public long getCustomer_id() {

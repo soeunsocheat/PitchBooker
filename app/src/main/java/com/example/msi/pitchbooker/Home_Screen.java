@@ -2,6 +2,7 @@ package com.example.msi.pitchbooker;
 
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,14 +11,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Home_Screen extends Fragment implements View.OnClickListener{
+public class Home_Screen extends Fragment implements View.OnClickListener {
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7;
     Button btnA, btnB, btnC, btnD;
     Intent intent;
+    static long num;
 
     public Home_Screen() {
         // Required empty public constructor
@@ -53,12 +72,55 @@ public class Home_Screen extends Fragment implements View.OnClickListener{
         btnC.setOnClickListener(this);
         btnD.setOnClickListener(this);
 
+        ballfield();
         return view;
+    }
+
+    private void ballfield() {
+        RequestQueue queue = Volley.newRequestQueue(getContext());
+        String url = "http://pitchbooker.gicitc.info/location/list";
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+//                        Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+                        Gson gson =new Gson();
+
+                        try {
+//                            JSONObject jsonObject = new JSONObject(response);
+//                            Toast.makeText(getApplicationContext(),"status : "+jsonObject.getBoolean("status"),Toast.LENGTH_LONG).show();
+                            List_Reservation list = gson.fromJson(response,List_Reservation.class);
+//                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(),"status : "+list.isStatus(),Toast.LENGTH_LONG).show();
+
+                        } catch (JsonSyntaxException e) {
+                            e.printStackTrace();
+                        }
+                        List_Reservation list = gson.fromJson(response,List_Reservation.class);
+                        if(list.isStatus()){
+                            SharedPreferences sharedPreferences = getActivity().getSharedPreferences(getResources().getString(R.string.data_app),getActivity().MODE_PRIVATE);
+                            SharedPreferences.Editor editor =sharedPreferences.edit();
+
+                        }else{
+                            Toast.makeText(getContext(),list.getMessage(),Toast.LENGTH_LONG).show();
+                        }
+
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+//                Toast.makeText(getApplicationContext(),"a:"+error.getMessage(),Toast.LENGTH_LONG).show();
+
+
+            }
+        });
+        queue.add(stringRequest);
     }
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()){
+        switch (view.getId()) {
             case R.id.btn1:
                 intent = new Intent(getContext(), List_Sport_Club.class);
                 startActivity(intent);
@@ -113,6 +175,4 @@ public class Home_Screen extends Fragment implements View.OnClickListener{
                 break;
         }
     }
-
-
 }

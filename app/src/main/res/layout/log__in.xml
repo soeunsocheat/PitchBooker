@@ -7,7 +7,19 @@
     android:orientation="vertical"
     tools:context="com.example.msi.pitchbooker.Log_In">
 
-    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorGreenDark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -71,15 +83,7 @@
         android:text="@string/login"
         android:textSize="26dp"/>
 
-    <TextView
-        android:id="@+id/tv_forgetPWD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/forgot_password"
-        android:textColor="@color/colorDark"
-        android:fontFamily="casual"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
+
     <TextView
         android:id="@+id/tv_signUp"
         android:layout_width="wrap_content"
@@ -87,7 +91,7 @@
         android:text="@string/Sign_up"
         android:textSize="20dp"
         android:textColor="@color/colorDark"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="100dp"
         android:layout_gravity="center"/>
 
 </LinearLayout>

@@ -48,7 +48,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/btn_green"
-        android:onClick="doSent"
+        android:id="@+id/Sent"
         android:text="@string/sent"
         android:textColor="@color/colorDark"
         android:textSize="26dp"
