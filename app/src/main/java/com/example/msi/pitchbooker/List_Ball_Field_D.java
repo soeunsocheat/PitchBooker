@@ -15,12 +15,12 @@ import android.widget.ListView;
 public class List_Ball_Field_D extends Fragment {
     private ListView listItem;
     private ArrayAdapter<Item> items;
-    public static String[] time = {"7:00 am", "8:00 am","9:00 am","10:00 am"
-            , "11:00 am","12:00 pm","1:00 pm","2:00 pm","3:00 pm","4:00 pm"
-            ,"5:00 pm","6:00 pm","7:00 pm","8:00 pm","9:00 pm","10:00 pm"};
-    public static String[] time30 = {"7:30 am", "8:30 am","9:30 am","10:30 am"
-            , "11:30 am","12:30 pm","1:30 pm","2:30 pm","3:30 pm","4:30 pm"
-            ,"5:30 pm","6:30 pm","7:30 pm","8:30 pm","9:30 pm","10:30 pm",};
+    public static String[] time = {"7:00", "8:00","9:00","10:00"
+            , "11:00","12:00","13:00 ","14:00","15:00","16:00"
+            ,"17:00","18:00","19:00","20:00","21:00","22:00"};
+    public static String[] time30 = {"7:30", "8:30","9:30","10:30"
+            , "11:30","12:30","13:30 ","14:30","15:30","16:30"
+            ,"17:30","18:30","19:30","20:30","21:30","22:30"};
 
     private static Item[] times;
     {

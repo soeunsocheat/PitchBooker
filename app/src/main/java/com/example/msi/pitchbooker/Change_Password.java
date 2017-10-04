@@ -42,7 +42,6 @@ public class Change_Password extends AppCompatActivity {
     }
 
     public void btn_changepassword(View view) {
-        SharedPreferences preferences = getSharedPreferences(getResources().getString(R.string.data_app), MODE_PRIVATE);
         if (!et_newpassword.getText().toString().equals(et_confpassword.getText().toString())){
             Toast.makeText(getApplicationContext(),"Confirm password is incorrect!", Toast.LENGTH_SHORT).show();
         }else if (et_newpassword.getText().toString().contains(" ")||et_confpassword.getText().toString().contains(" ")
@@ -60,7 +59,6 @@ public class Change_Password extends AppCompatActivity {
     private void change(){
         RequestQueue queue = Volley.newRequestQueue(this);
         String url = "http://pitchbooker.gicitc.info/customer/change/password";
-        final SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.data_app),MODE_PRIVATE);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

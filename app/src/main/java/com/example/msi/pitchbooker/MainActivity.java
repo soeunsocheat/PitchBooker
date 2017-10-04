@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity
                 Intent intent1 = new Intent(this,Log_In.class);
                 startActivity(intent1);
 //                finish();
-//                break;
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

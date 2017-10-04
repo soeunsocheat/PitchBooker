@@ -48,7 +48,6 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_createAccount:
-                SharedPreferences preferences = getSharedPreferences(getResources().getString(R.string.data_app), MODE_PRIVATE);
                 if (!et_password.getText().toString().equals(et_confpassword.getText().toString())) {
                     Toast.makeText(getApplicationContext(), "Confirm password is incorrect!", Toast.LENGTH_SHORT).show();
                 } else if (et_password.getText().toString().contains(" ") || et_confpassword.getText().toString().contains(" ")) {
@@ -78,7 +77,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
 //                            Toast.makeText(getApplicationContext(),"status : "+jsonObject.getBoolean("status"),Toast.LENGTH_LONG).show();
                             LoginResponse loginResponse = gson.fromJson(response,LoginResponse.class);
 //                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
-                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
+//                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
 
                         } catch (JsonSyntaxException e) {
                             e.printStackTrace();

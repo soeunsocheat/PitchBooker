@@ -8,17 +8,28 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
 
 public class List_Ball_Field_B extends Fragment {
+    TextView f1, f2, f3, f4, f5, f6;
     private ListView listItem;
     private ArrayAdapter<Item> items;
-    public static String[] time = {"7:00 am", "8:00 am","9:00 am","10:00 am"
-            , "11:00 am","12:00 pm","1:00 pm","2:00 pm","3:00 pm","4:00 pm"
-            ,"5:00 pm","6:00 pm","7:00 pm","8:00 pm","9:00 pm","10:00 pm"};
-    public static String[] time30 = {"7:30 am", "8:30 am","9:30 am","10:30 am"
-            , "11:30 am","12:30 pm","1:30 pm","2:30 pm","3:30 pm","4:30 pm"
-            ,"5:30 pm","6:30 pm","7:30 pm","8:30 pm","9:30 pm","10:30 pm",};
+    public static String[] time = {"7:00", "8:00","9:00","10:00"
+            , "11:00","12:00","13:00 ","14:00","15:00","16:00"
+            ,"17:00","18:00","19:00","20:00","21:00","22:00"};
+    public static String[] time30 = {"7:30", "8:30","9:30","10:30"
+            , "11:30","12:30","13:30 ","14:30","15:30","16:30"
+            ,"17:30","18:30","19:30","20:30","21:30","22:30"};
 
     private static Item[] times;
     {
@@ -36,10 +47,53 @@ public class List_Ball_Field_B extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View V = inflater.inflate(R.layout.list_ball_field, container, false);
+        View v = inflater.inflate(R.layout.list_ball_field, container, false);
         items = new List_Item(getActivity(), times);
-        listItem = (ListView)V.findViewById(R.id.listballfield);
+        listItem = (ListView)v.findViewById(R.id.listballfield);
         listItem.setAdapter(items);
-        return V;
+        f1 = (TextView)v.findViewById(R.id.f1);
+        f2 = (TextView)v.findViewById(R.id.f2);
+        f3 = (TextView)v.findViewById(R.id.f3);
+        f4 = (TextView)v.findViewById(R.id.f4);
+        f5 = (TextView)v.findViewById(R.id.f5);
+        f6 = (TextView)v.findViewById(R.id.f6);
+
+
+        ListBallField();
+        return v;
+    }
+
+    private void ListBallField() {
+        RequestQueue queue = Volley.newRequestQueue(getContext());
+        String url = "http://pitchbooker.gicitc.info/location/list/field/reservation/today";
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Gson gson = new Gson();
+
+                try {
+
+                } catch (JsonSyntaxException e) {
+                    e.printStackTrace();
+                }
+                List_Reservation list = gson.fromJson(response, List_Reservation.class);
+                if(list.isStatus()){
+                    f1.setText(list.getLocations().get(0).getFields().get(0).getField_name());
+                    f2.setText(list.getLocations().get(0).getFields().get(1).getField_name());
+//                    f3.setText(list.getLocations().get(0).getFields().get(2).getField_name());
+//                    f4.setText(list.getLocations().get(0).getFields().get(3).getField_name());
+//                    f5.setText(list.getLocations().get(0).getFields().get(4).getField_name());
+//                    f6.setText(list.getLocations().get(0).getFields().get(5).getField_name());
+                }
+            }
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }
+        );
+        queue.add(stringRequest);
     }
 }
