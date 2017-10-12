@@ -102,6 +102,7 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener{
                             finish();
                         } else {
                             Toast.makeText(Log_In.this, "" + login.getMsg(), Toast.LENGTH_LONG).show();
+                            et_password.setText("");
                         }
 
 
@@ -118,7 +119,6 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener{
             protected Map<String, String> getParams() throws AuthFailureError {
                 HashMap<String, String> hashMap = new HashMap<>();
                 Context ctx = Log_In.this;
-                ;
                 hashMap.put("customer_name", et_username.getText().toString());
                 hashMap.put("customer_password", et_password.getText().toString());
                 hashMap.put("customer_device_id", AppUtil.obtainIMEI(ctx));

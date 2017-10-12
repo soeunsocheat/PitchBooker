@@ -10,6 +10,7 @@ public class List_Reservation {
     private boolean status;
     private String message;
     private String date;
+    private ArrayList<Location> locations;
 
     public boolean isStatus() {
         return status;
@@ -43,7 +44,6 @@ public class List_Reservation {
         this.locations = locations;
     }
 
-    private ArrayList<Location> locations;
 }
 
 
@@ -113,6 +113,7 @@ class Reservation{
     private long customer_id;
     private String reserve_date;
     private String reserve_start_time;
+    private String reserve_end_time;
 
     public long getReserve_id() {
         return reserve_id;
@@ -161,8 +162,6 @@ class Reservation{
     public void setReserve_end_time(String reserve_end_time) {
         this.reserve_end_time = reserve_end_time;
     }
-
-    private String reserve_end_time;
 }
 
 class Item {

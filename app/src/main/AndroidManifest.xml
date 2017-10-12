@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Log_In"
+            android:name=".First_Screen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,11 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Log_In" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Forget_Password" />
         <activity android:name=".Sign_Up" />
         <activity android:name=".Change_Password" />
         <activity android:name=".List_Sport_Club" />
+        <activity android:name=".List_Book_field"></activity>
     </application>
 
 </manifest>

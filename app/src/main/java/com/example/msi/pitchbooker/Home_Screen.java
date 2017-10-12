@@ -43,7 +43,7 @@ public class Home_Screen extends Fragment implements View.OnClickListener {
     Button btnA, btnB, btnC, btnD;
     TextView tv_date;
     Intent intent;
-    static long num;
+    String today;
 
     public Home_Screen() {
         // Required empty public constructor
@@ -81,7 +81,6 @@ public class Home_Screen extends Fragment implements View.OnClickListener {
         btnD.setOnClickListener(this);
 
         ballfield();
-        ballfieldbydate();
         return view;
     }
 
@@ -106,6 +105,7 @@ public class Home_Screen extends Fragment implements View.OnClickListener {
                         List_Reservation list = gson.fromJson(response,List_Reservation.class);
                         if(list.isStatus()){
                             String str = list.getDate();
+                            today = str;
                             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                             Date newDate = null;
                             try {
@@ -114,63 +114,17 @@ public class Home_Screen extends Fragment implements View.OnClickListener {
                                 e.printStackTrace();
                             }
 
-                            format = new SimpleDateFormat("EEEE, dd-MM-yyyy");
+                            format = new SimpleDateFormat("EEEE, dd-MMM-yyyy");
                             String strdate = format.format(newDate);
                             tv_date.setText(strdate);
                             btnA.setText(list.getLocations().get(0).getLocation_name());
                             btnB.setText(list.getLocations().get(1).getLocation_name());
                             btnC.setText(list.getLocations().get(2).getLocation_name());
                             btnD.setText(list.getLocations().get(3).getLocation_name());
-                        }else{
-                            Toast.makeText(getContext(),list.getMessage(),Toast.LENGTH_LONG).show();
-                        }
 
-
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-        //                Toast.makeText(getApplicationContext(),"a:"+error.getMessage(),Toast.LENGTH_LONG).show();
-
-
-                    }
-                }
-        );
-        queue.add(stringRequest);
-    }
-
-    private void ballfieldbydate() {
-        RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/location/list/field/reservation/today";
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Gson gson =new Gson();
-
-                        try {
-//                            JSONObject jsonObject = new JSONObject(response);
-//                            Toast.makeText(getApplicationContext(),"status : "+jsonObject.getBoolean("status"),Toast.LENGTH_LONG).show();
-//                            List_Reservation list = gson.fromJson(response,List_Reservation.class);
-//                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
-
-                        } catch (JsonSyntaxException e) {
-                            e.printStackTrace();
-                        }
-                        List_Reservation list = gson.fromJson(response,List_Reservation.class);
-                        if(list.isStatus()){
-                            String str = list.getDate();
-                            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-                            Date newDate = null;
-                            try {
-                                newDate = format.parse(str);
-                            } catch (ParseException e) {
-                                e.printStackTrace();
-                            }
-
-                            format = new SimpleDateFormat("EEEE\n\ndd-MM-yyyy");
-                            String strdate = format.format(newDate);
-                            btn1.setText(strdate);
+                            format = new SimpleDateFormat("EEEE\n\ndd-MMM-yyyy");
+                            String strdate1 = format.format(newDate);
+                            btn1.setText(strdate1);
 
                             Calendar cal = Calendar.getInstance();
                             cal.setTime(newDate);
@@ -204,70 +158,110 @@ public class Home_Screen extends Fragment implements View.OnClickListener {
 
                     }
                 }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                //                Toast.makeText(getApplicationContext(),"a:"+error.getMessage(),Toast.LENGTH_LONG).show();
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+        //                Toast.makeText(getApplicationContext(),"a:"+error.getMessage(),Toast.LENGTH_LONG).show();
 
 
-            }
-        }
+                    }
+                }
         );
         queue.add(stringRequest);
     }
 
     @Override
     public void onClick(View view) {
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
+        try {
+            cal.setTime(format.parse(today));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
         switch (view.getId()) {
             case R.id.btn1:
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", today);
                 startActivity(intent);
                 break;
             case R.id.btn2:
+                cal.add(Calendar.DAY_OF_MONTH,1);
+                String day2 = format.format(cal.getTime());
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", day2);
                 startActivity(intent);
                 break;
             case R.id.btn3:
+                cal.add(Calendar.DAY_OF_MONTH,2);
+                String day3 = format.format(cal.getTime());
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", day3);
                 startActivity(intent);
                 break;
             case R.id.btn4:
+                cal.add(Calendar.DAY_OF_MONTH,3);
+                String day4 = format.format(cal.getTime());
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", day4);
                 startActivity(intent);
                 break;
             case R.id.btn5:
+                cal.add(Calendar.DAY_OF_MONTH,4);
+                String day5 = format.format(cal.getTime());
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", day5);
                 startActivity(intent);
                 break;
             case R.id.btn6:
+                cal.add(Calendar.DAY_OF_MONTH,5);
+                String day6 = format.format(cal.getTime());
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", day6);
                 startActivity(intent);
                 break;
             case R.id.btn7:
+                cal.add(Calendar.DAY_OF_MONTH,6);
+                String day7 = format.format(cal.getTime());
                 intent = new Intent(getContext(), List_Sport_Club.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("date", day7);
                 startActivity(intent);
                 break;
             case R.id.btnA:
                 intent = new Intent(getActivity(), List_Sport_Club.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("hello", 0);
+                intent.putExtra("date", today);
                 getActivity().startActivity(intent);
                 break;
             case R.id.btnB:
                 intent = new Intent(getActivity(), List_Sport_Club.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("hello", 1);
+                intent.putExtra("date", today);
                 getActivity().startActivity(intent);
                 break;
             case R.id.btnC:
                 intent = new Intent(getContext(), List_Sport_Club.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("hello", 2);
+                intent.putExtra("date", today);
                 getContext().startActivity(intent);
                 break;
             case R.id.btnD:
                 intent = new Intent(getContext(), List_Sport_Club.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("hello", 3);
+                intent.putExtra("date", today);
                 getContext().startActivity(intent);
                 break;
         }

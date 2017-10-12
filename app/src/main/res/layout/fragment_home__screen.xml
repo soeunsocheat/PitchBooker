@@ -30,7 +30,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Today"
+            android:text=""
+            android:fontFamily="serif"
+            android:textStyle="bold"
             android:textSize="20dp"
             android:textColor="@color/colorWhite"
             android:layout_marginTop="10dp"/>
@@ -53,7 +55,7 @@
                     android:layout_marginStart="5dp"
                     android:background="@drawable/sportclub"
                     android:fontFamily="serif"
-                    android:text="A"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite"
                     android:textSize="26dp"/>
@@ -62,7 +64,7 @@
                     android:id="@+id/btnB"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:text="B"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="26dp"
                     android:fontFamily="serif"
@@ -74,7 +76,7 @@
                     android:id="@+id/btnC"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:text="C"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="26dp"
                     android:fontFamily="serif"
@@ -86,7 +88,7 @@
                     android:id="@+id/btnD"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:text="D"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="26dp"
                     android:fontFamily="serif"
@@ -101,6 +103,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="By Day"
+            android:fontFamily="serif"
+            android:textStyle="bold"
             android:textSize="20dp"
             android:textColor="@color/colorWhite"
             android:layout_marginTop="10dp"/>
@@ -119,10 +123,12 @@
 
                 <Button
                     android:id="@+id/btn1"
-                    android:text="ច័ន្ទ\n\nMon\n\nkeke"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
@@ -130,10 +136,12 @@
 
                 <Button
                     android:id="@+id/btn2"
-                    android:text="Tue"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
@@ -141,10 +149,12 @@
 
                 <Button
                     android:id="@+id/btn3"
-                    android:text="Wed"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
@@ -152,10 +162,10 @@
 
                 <Button
                     android:id="@+id/btn4"
-                    android:text="THur"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
@@ -163,10 +173,10 @@
 
                 <Button
                     android:id="@+id/btn5"
-                    android:text="Fri"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
@@ -174,10 +184,10 @@
 
                 <Button
                     android:id="@+id/btn6"
-                    android:text="Sat"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
@@ -185,10 +195,10 @@
 
                 <Button
                     android:id="@+id/btn7"
-                    android:text="Sun"
+                    android:text=""
                     android:textAllCaps="false"
                     android:textSize="14dp"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorGreenDark"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
