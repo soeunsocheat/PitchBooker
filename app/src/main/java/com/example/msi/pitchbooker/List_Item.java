@@ -56,7 +56,7 @@ public class List_Item extends ArrayAdapter<String>{
             TextView f26 = convertView.findViewById(R.id.f26);
 
 
-            if (values.get(position).getS11() != null) {
+            if (values.get(position).getT11() != null) {
                 f11.setBackgroundColor(Color.BLACK);
 //                f21.setBackgroundColor(Color.BLACK);
             }

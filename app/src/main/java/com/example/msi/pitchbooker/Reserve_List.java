@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Reserve_List {
     private boolean status;
     private String message;
-    private ArrayList < Reserve_list > reserve_lists;
+    private ArrayList < Reserve_list > reserve_list;
 
 
     public boolean isStatus() {
@@ -31,11 +31,11 @@ public class Reserve_List {
     }
 
     public ArrayList<Reserve_list> getReserve_lists() {
-        return reserve_lists;
+        return reserve_list;
     }
 
     public void setReserve_lists(ArrayList<Reserve_list> reserve_lists) {
-        this.reserve_lists = reserve_lists;
+        this.reserve_list = reserve_lists;
     }
 
     class Reserve_list {

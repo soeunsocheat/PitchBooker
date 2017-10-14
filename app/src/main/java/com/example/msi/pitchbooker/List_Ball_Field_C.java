@@ -86,48 +86,18 @@ public class List_Ball_Field_C extends Fragment {
                     for (int j = 0; j < fields.get(i).getReservations().size(); j++){
                         Table_Field_value table_field_value = new Table_Field_value();
 
-                        table_field_value.setS11(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE11(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-                        table_field_value.setS12(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE12(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-
-                        table_field_value.setS13(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE13(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-
-                        table_field_value.setS14(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE14(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-
-                        table_field_value.setS15(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE15(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-
-                        table_field_value.setS16(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE16(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-
-                        table_field_value.setS21(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE21(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-
-                        table_field_value.setS22(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE22(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-                        table_field_value.setS23(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE23(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-                        table_field_value.setS24(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE24(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-                        table_field_value.setS25(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE25(fields.get(i).getReservations().get(j).getReserve_end_time());
-
-                        table_field_value.setS26(fields.get(i).getReservations().get(j).getReserve_start_time());
-                        table_field_value.setE26(fields.get(i).getReservations().get(j).getReserve_end_time());
-
+                        table_field_value.setT11(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT21(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT12(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT22(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT13(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT23(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT14(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT24(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT15(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT25(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT16(fields.get(i).getReservations().get(j).getReserve_start_time());
+                        table_field_value.setT26(fields.get(i).getReservations().get(j).getReserve_start_time());
                         values.add(table_field_value);
                     }
                 }

@@ -35,12 +35,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
             android:orientation="horizontal"
-            android:weightSum="6.1">
+            android:weightSum="6.22">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1.1">
+                android:layout_weight="1.15">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="1dp"
-                android:layout_weight="1"
+                android:layout_weight="0.95"
                 android:orientation="vertical">
 
                 <TextView
@@ -87,7 +87,7 @@
                     android:background="@color/colorPrimaryLight"
                     android:gravity="center"
                     android:textColor="@color/colorDark"
-                    android:text="sportclub"
+                    android:text="Sport Club"
                     android:textStyle="bold"
                     android:fontFamily="serif"/>
 
@@ -97,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="1dp"
-                android:layout_weight="1"
+                android:layout_weight="1.12"
                 android:orientation="vertical">
 
                 <TextView
@@ -106,7 +106,7 @@
                     android:background="@color/colorPrimaryLight"
                     android:gravity="center"
                     android:textColor="@color/colorDark"
-                    android:text="ballfield"
+                    android:text="Field"
                     android:textStyle="bold"
                     android:fontFamily="serif"/>
 
@@ -164,12 +164,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id1"
@@ -188,7 +188,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -226,7 +226,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -284,12 +284,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id2"
@@ -308,7 +308,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -346,7 +346,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -404,12 +404,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id3"
@@ -428,7 +428,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -466,7 +466,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -524,12 +524,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id4"
@@ -548,7 +548,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -586,7 +586,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -644,12 +644,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id5"
@@ -668,7 +668,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -695,10 +695,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -706,7 +706,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -764,12 +764,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id6"
@@ -788,7 +788,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -826,7 +826,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -884,12 +884,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id7"
@@ -908,7 +908,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -946,7 +946,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -1005,12 +1005,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id8"
@@ -1029,7 +1029,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -1037,10 +1037,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1067,7 +1067,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -1075,10 +1075,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1125,12 +1125,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:orientation="horizontal"
-                    android:weightSum="6.1">
+                    android:weightSum="6.22">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_weight="1.1">
+                        android:layout_weight="1.15">
 
                         <TextView
                             android:id="@+id/id9"
@@ -1149,7 +1149,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="0.95"
                         android:orientation="vertical">
 
                         <TextView
@@ -1187,7 +1187,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.12"
                         android:orientation="vertical">
 
                         <TextView
@@ -1244,12 +1244,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:orientation="horizontal"
-                android:weightSum="6.1">
+                android:weightSum="6.22">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_weight="1.1">
+                    android:layout_weight="1.15">
 
                     <TextView
                         android:id="@+id/id10"
@@ -1268,7 +1268,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="1dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.95"
                     android:orientation="vertical">
 
                     <TextView
@@ -1306,7 +1306,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="1dp"
-                    android:layout_weight="1"
+                    android:layout_weight="1.12"
                     android:orientation="vertical">
 
                     <TextView

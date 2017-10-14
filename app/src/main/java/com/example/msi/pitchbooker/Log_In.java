@@ -93,7 +93,8 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener{
                         if (login.isStatus()) {
                             SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.data_app), MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
-                            editor.putString("customer_id", login.getCustomer_id() + "");
+                            editor.putString("customer_id", login.getCustomer_id()+"");
+                            Toast.makeText(Log_In.this, "customer_id: "+login.getCustomer_id(), Toast.LENGTH_SHORT).show();
                             editor.putString("customer_name", et_username.getText().toString());
                             editor.putString("customer_password", et_password.getText().toString());
                             editor.apply();

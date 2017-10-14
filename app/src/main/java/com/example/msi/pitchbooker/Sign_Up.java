@@ -50,6 +50,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
             case R.id.btn_createAccount:
                 if (!et_password.getText().toString().equals(et_confpassword.getText().toString())) {
                     Toast.makeText(getApplicationContext(), "Confirm password is incorrect!", Toast.LENGTH_SHORT).show();
+                    et_confpassword.setText("");
                 } else if (et_password.getText().toString().contains(" ") || et_confpassword.getText().toString().contains(" ")) {
                     Toast.makeText(getApplicationContext(), "Password is not allow space!", Toast.LENGTH_SHORT).show();
                 } else if (et_password.getText().toString().isEmpty() && et_confpassword.getText().toString().isEmpty()) {
