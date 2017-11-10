@@ -76,25 +76,14 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener{
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        //                                Toast.makeText(getActivity(),response,Toast.LENGTH_LONG).show();
+//                        Toast.makeText(Log_In.this,response,Toast.LENGTH_LONG).show();
                         Gson gson = new Gson();
-
-                        try {
-                            //                            JSONObject jsonObject = new JSONObject(response);
-                            //                            Toast.makeText(getApplicationContext(),"status : "+jsonObject.getBoolean("status"),Toast.LENGTH_LONG).show();
-                            LoginResponse loginResponse = gson.fromJson(response, LoginResponse.class);
-                            //                            Toast.makeText(getApplicationContext(),"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
-                            //                                    Toast.makeText(Log_In.this,"status : "+loginResponse.isStatus(),Toast.LENGTH_LONG).show();
-
-                        } catch (JsonSyntaxException e) {
-                            e.printStackTrace();
-                        }
                         LoginResponse login = gson.fromJson(response, LoginResponse.class);
                         if (login.isStatus()) {
                             SharedPreferences sharedPreferences = getSharedPreferences(getResources().getString(R.string.data_app), MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             editor.putString("customer_id", login.getCustomer_id()+"");
-                            Toast.makeText(Log_In.this, "customer_id: "+login.getCustomer_id(), Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(Log_In.this, "customer_id: "+login.getCustomer_id(), Toast.LENGTH_SHORT).show();
                             editor.putString("customer_name", et_username.getText().toString());
                             editor.putString("customer_password", et_password.getText().toString());
                             editor.apply();

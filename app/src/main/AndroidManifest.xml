@@ -29,7 +29,8 @@
         <activity android:name=".Sign_Up" />
         <activity android:name=".Change_Password" />
         <activity android:name=".List_Sport_Club" />
-        <activity android:name=".List_Book_field"></activity>
+        <activity android:name=".List_Item_A" />
+        <activity android:name=".DFragment"></activity>
     </application>
 
 </manifest>

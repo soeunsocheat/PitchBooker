@@ -47,7 +47,6 @@ public class List_Sport_Club extends FragmentActivity {
 
 
         date = (TextView)findViewById(R.id.tv_date);
-        date.setText(day);
         listSportClub();
     }
 

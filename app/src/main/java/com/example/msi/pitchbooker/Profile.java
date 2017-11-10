@@ -51,7 +51,7 @@ public class Profile extends Fragment {
     TextView timeStart1,timeStart2,timeStart3,timeStart4,timeStart5,timeStart6,timeStart7,timeStart8,timeStart9,timeStart10;
     TextView timeEnd1,timeEnd2,timeEnd3,timeEnd4,timeEnd5,timeEnd6,timeEnd7,timeEnd8,timeEnd9,timeEnd10;
 
-    String cutomer_id;
+    static String customer_id;
     String date;
     String timeStart, timeEnd;
     @Override
@@ -62,7 +62,7 @@ public class Profile extends Fragment {
         tv_username = (TextView) view.findViewById(R.id.tv_username);
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences(getString(R.string.data_app), getActivity().MODE_PRIVATE);
         tv_username.setText("Name : " + sharedPreferences.getString("customer_name", ""));
-        cutomer_id = sharedPreferences.getString("customer_id", "");
+        customer_id = sharedPreferences.getString("customer_id", "");
 
 //        id = Long.parseLong(cutomer_id);
         // list all dates
@@ -1080,7 +1080,7 @@ public class Profile extends Fragment {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 HashMap<String, String> hashMap = new HashMap<>();
-                hashMap.put("customer_id", cutomer_id);
+                hashMap.put("customer_id", customer_id);
                 return hashMap;
             }
         };

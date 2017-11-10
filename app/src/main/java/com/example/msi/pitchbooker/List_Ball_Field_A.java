@@ -1,6 +1,7 @@
 package com.example.msi.pitchbooker;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -17,7 +19,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,30 +30,12 @@ import java.util.Map;
 
 public class List_Ball_Field_A extends Fragment {
     TextView f1, f2, f3, f4, f5, f6;
-    String day;
+    static String day;
     private ListView listItem;
     private ArrayList<Table_Field_value> values;
     private ArrayList<String> times;
-    private List_Item items;
-    public static String[] time = {"7:00", "8:00", "9:00", "10:00"
-            , "11:00", "12:00", "13:00 ", "14:00", "15:00", "16:00"
-            , "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"};
-    public static String[] time30 = {"7:30", "8:30", "9:30", "10:30"
-            , "11:30", "12:30", "13:30 ", "14:30", "15:30", "16:30"
-            , "17:30", "18:30", "19:30", "20:30", "21:30", "22:30"};
-
-
-    //    private static Item[] times;
-//    {
-//
-//        times = new Item[time.length * 1];
-//        for (int i = 0; i < time.length; i++) {
-//            times[i] = new Item(time[i]);
-//        }
-////        for (int i = 0; i < namesStr.length; i++) {
-////            names[namesStr.length + i] = new Student(resIds[i], namesStr[i]);
-////        }
-//    }
+    private List_Item_A items;
+    public static String[] pitch = {"A 1", "A 2", "A 3", "A 4", "A 5", "A 6"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -60,14 +43,14 @@ public class List_Ball_Field_A extends Fragment {
         // Inflate the layout for this fragment
         times = new ArrayList<>();
 
-        for (String t: time){
+        for (String t: Table_Field_value.time00){
             times.add(t);
         }
 
         View v = inflater.inflate(R.layout.list_ball_field, container, false);
         values = new ArrayList<>();
-        items = new List_Item(getActivity(), times, values);
-        listItem = (ListView) v.findViewById(R.id.listballfield);
+        items = new List_Item_A(getActivity(), times, values);
+        listItem = (ListView) v.findViewById(R.id.list_ball_field);
         listItem.setAdapter(items);
 
         f1 = (TextView) v.findViewById(R.id.f1);
@@ -76,6 +59,7 @@ public class List_Ball_Field_A extends Fragment {
         f4 = (TextView) v.findViewById(R.id.f4);
         f5 = (TextView) v.findViewById(R.id.f5);
         f6 = (TextView) v.findViewById(R.id.f6);
+
 
         ListBallField();
         return v;
