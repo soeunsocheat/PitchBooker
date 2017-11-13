@@ -58,14 +58,20 @@ public class Fill_Feedback extends Fragment implements View.OnClickListener{
                 if(et_feedback.getText().toString().isEmpty()){
                     Toast.makeText(getContext(), "Fill feedback is empty!", Toast.LENGTH_SHORT).show();
                 } else {
-                    sent();
+//                    sent();
+                    SharedPreferences sharedPreferences = getActivity().getSharedPreferences(getResources().getString(R.string.data_app),getActivity().MODE_PRIVATE);
+                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    editor.putString("feedback_content", et_feedback.getText().toString());
+                    editor.apply();
+                    Toast.makeText(getActivity(), "Fill feedback is already.\nThank You!", Toast.LENGTH_SHORT).show();
                 }
+
         }
     }
 
     private void sent() {
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/feedback/add";
+        String url = getString(R.string.url_fillFeedback);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
@@ -84,15 +90,15 @@ public class Fill_Feedback extends Fragment implements View.OnClickListener{
                             e.printStackTrace();
                         }
                         LoginResponse login = gson.fromJson(response, LoginResponse.class);
-                        if(login.isStatus()){
-                            SharedPreferences sharedPreferences = getActivity().getSharedPreferences(getResources().getString(R.string.data_app),getActivity().MODE_PRIVATE);
-                            SharedPreferences.Editor editor =sharedPreferences.edit();
-                            editor.putString("feedback_content", et_feedback.getText().toString());
-                            editor.apply();
-                            Toast.makeText(getActivity(), "Fill: "+sharedPreferences.getString("feedback_content", ""), Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(getContext(),login.getMsg(),Toast.LENGTH_LONG).show();
-                        }
+//                        if(login.isStatus()){
+//                            SharedPreferences sharedPreferences = getActivity().getSharedPreferences(getResources().getString(R.string.data_app),getActivity().MODE_PRIVATE);
+//                            SharedPreferences.Editor editor =sharedPreferences.edit();
+//                            editor.putString("feedback_content", et_feedback.getText().toString());
+//                            editor.apply();
+//                            Toast.makeText(getActivity(), "Fill: "+sharedPreferences.getString("feedback_content", ""), Toast.LENGTH_SHORT).show();
+//                        }else{
+//                            Toast.makeText(getContext(),login.getMsg(),Toast.LENGTH_LONG).show();
+//                        }
                     }
                 }, new Response.ErrorListener() {
             @Override

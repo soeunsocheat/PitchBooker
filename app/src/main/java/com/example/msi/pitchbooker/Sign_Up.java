@@ -65,7 +65,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
 
     private void SignUp(){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://pitchbooker.gicitc.info/customer/register";
+        String url = getString(R.string.url_register);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

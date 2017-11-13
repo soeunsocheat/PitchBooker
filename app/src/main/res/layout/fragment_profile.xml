@@ -27,9 +27,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:background="@color/colorDark"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,12 +47,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="1dp"
-                    android:gravity="center"
-                    android:textColor="@color/colorDark"
                     android:background="@color/colorPrimaryLight"
+                    android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="No"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"/>
+                    android:textColor="@color/colorDark"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -66,11 +67,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorPrimaryLight"
+                    android:fontFamily="serif"
                     android:gravity="center"
-                    android:textColor="@color/colorDark"
                     android:text="date"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"/>
+                    android:textColor="@color/colorDark"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -85,11 +86,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorPrimaryLight"
+                    android:fontFamily="serif"
                     android:gravity="center"
-                    android:textColor="@color/colorDark"
                     android:text="Sport Club"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"/>
+                    android:textColor="@color/colorDark"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -104,11 +105,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorPrimaryLight"
+                    android:fontFamily="serif"
                     android:gravity="center"
-                    android:textColor="@color/colorDark"
                     android:text="Field"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"/>
+                    android:textColor="@color/colorDark"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -123,11 +124,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorPrimaryLight"
+                    android:fontFamily="serif"
                     android:gravity="center"
-                    android:textColor="@color/colorDark"
                     android:text="Time Start"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"/>
+                    android:textColor="@color/colorDark"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -142,11 +143,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorPrimaryLight"
-                    android:textColor="@color/colorDark"
+                    android:fontFamily="serif"
                     android:gravity="center"
                     android:text="Time End"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"/>
+                    android:textColor="@color/colorDark"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </LinearLayout>
@@ -154,6 +155,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -176,11 +178,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="1"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -196,10 +198,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -215,10 +217,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -234,10 +236,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -253,10 +255,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -272,13 +274,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -296,11 +299,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="2"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -316,10 +319,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -335,10 +338,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -354,10 +357,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -373,10 +376,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -392,13 +395,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -416,11 +420,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="3"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -436,10 +440,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -455,10 +459,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -474,10 +478,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -493,10 +497,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -512,13 +516,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -536,11 +541,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="4"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -556,10 +561,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -575,10 +580,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -594,10 +599,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -613,10 +618,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -632,13 +637,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -656,11 +662,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="5"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -676,10 +682,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -714,10 +720,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -733,10 +739,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -752,13 +758,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -776,11 +783,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="6"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -796,10 +803,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -815,10 +822,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -834,10 +841,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -853,10 +860,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -872,13 +879,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -896,11 +904,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="7"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -916,10 +924,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -935,10 +943,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -954,10 +962,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -973,10 +981,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -992,14 +1000,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
                 v
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1017,11 +1026,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="8"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1056,10 +1065,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1094,10 +1103,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1113,13 +1122,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1137,11 +1147,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
-                            android:gravity="center"
-                            android:textColor="@color/colorDark"
                             android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
                             android:text="9"
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1157,10 +1167,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1176,10 +1186,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1195,10 +1205,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1214,10 +1224,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
 
@@ -1233,132 +1243,739 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/colorWhite"
-                            android:textColor="@color/colorDark"
+                            android:fontFamily="serif"
                             android:gravity="center"
                             android:text=""
-                            android:fontFamily="serif"/>
+                            android:textColor="@color/colorDark" />
 
                     </LinearLayout>
-                </LinearLayout><LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:orientation="horizontal"
-                android:weightSum="6.22">
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_weight="1.15">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:weightSum="6.22">
 
-                    <TextView
-                        android:id="@+id/id10"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.15">
+
+                        <TextView
+                            android:id="@+id/id10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="10"
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
                         android:layout_marginLeft="1dp"
-                        android:gravity="center"
-                        android:textColor="@color/colorDark"
-                        android:background="@color/colorWhite"
-                        android:text="10"
-                        android:fontFamily="serif"/>
+                        android:layout_weight="0.95"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:id="@+id/date10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sportclub10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.12"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ballfield10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timestart10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeend10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_weight="0.95"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:weightSum="6.22">
 
-                    <TextView
-                        android:id="@+id/date10"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:textColor="@color/colorDark"
-                        android:gravity="center"
-                        android:text=""
-                        android:fontFamily="serif"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1.15">
 
+                        <TextView
+                            android:id="@+id/id11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="11"
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.95"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sportclub11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.12"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ballfield11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timestart11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeend11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:weightSum="6.22">
 
-                    <TextView
-                        android:id="@+id/sportclub10"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:textColor="@color/colorDark"
-                        android:gravity="center"
-                        android:text=""
-                        android:fontFamily="serif"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1.15">
 
+                        <TextView
+                            android:id="@+id/id12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.95"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sportclub12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.12"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ballfield12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timestart12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeend12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_weight="1.12"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:weightSum="6.22">
 
-                    <TextView
-                        android:id="@+id/ballfield10"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:textColor="@color/colorDark"
-                        android:gravity="center"
-                        android:text=""
-                        android:fontFamily="serif"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1.15">
 
+                        <TextView
+                            android:id="@+id/id13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.95"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sportclub13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.12"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ballfield13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timestart13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeend13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:weightSum="6.22">
 
-                    <TextView
-                        android:id="@+id/timestart10"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:textColor="@color/colorDark"
-                        android:gravity="center"
-                        android:text=""
-                        android:fontFamily="serif"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1.15">
 
+                        <TextView
+                            android:id="@+id/id14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="14"
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.95"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sportclub14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.12"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ballfield14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timestart14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeend14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:weightSum="6.22">
 
-                    <TextView
-                        android:id="@+id/timeend10"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/colorWhite"
-                        android:textColor="@color/colorDark"
-                        android:gravity="center"
-                        android:text=""
-                        android:fontFamily="serif"/>
+                        android:layout_height="40dp"
+                        android:layout_weight="1.15">
 
+                        <TextView
+                            android:id="@+id/id15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.95"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sportclub15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1.12"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ballfield15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timestart15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeend15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorDark" />
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
             </LinearLayout>
         </ScrollView>

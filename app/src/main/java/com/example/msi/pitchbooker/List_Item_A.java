@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -64,18 +65,18 @@ public class List_Item_A extends ArrayAdapter<String>{
 
         try {
 
-            TextView f11 = convertView.findViewById(R.id.f11);
-            TextView f21 = convertView.findViewById(R.id.f21);
-            TextView f12 = convertView.findViewById(R.id.f12);
-            TextView f22 = convertView.findViewById(R.id.f22);
-            TextView f13 = convertView.findViewById(R.id.f13);
-            TextView f23 = convertView.findViewById(R.id.f23);
-            TextView f14 = convertView.findViewById(R.id.f14);
-            TextView f24 = convertView.findViewById(R.id.f24);
-            TextView f15 = convertView.findViewById(R.id.f15);
-            TextView f25 = convertView.findViewById(R.id.f25);
-            TextView f16 = convertView.findViewById(R.id.f16);
-            TextView f26 = convertView.findViewById(R.id.f26);
+            final TextView f11 = convertView.findViewById(R.id.f11);
+            final TextView f21 = convertView.findViewById(R.id.f21);
+            final TextView f12 = convertView.findViewById(R.id.f12);
+            final TextView f22 = convertView.findViewById(R.id.f22);
+            final TextView f13 = convertView.findViewById(R.id.f13);
+            final TextView f23 = convertView.findViewById(R.id.f23);
+            final TextView f14 = convertView.findViewById(R.id.f14);
+            final TextView f24 = convertView.findViewById(R.id.f24);
+            final TextView f15 = convertView.findViewById(R.id.f15);
+            final TextView f25 = convertView.findViewById(R.id.f25);
+            final TextView f16 = convertView.findViewById(R.id.f16);
+            final TextView f26 = convertView.findViewById(R.id.f26);
 
             f11.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -86,18 +87,19 @@ public class List_Item_A extends ArrayAdapter<String>{
                     p1 = List_Ball_Field_A.pitch[0];
                     builder.setTitle("Booking Pitch");
                     builder.setMessage("Time Start               : " + ts1
-                                   + "\n\nTime End                 : " + te1
-                                   + "\n\nType of Pitch           : " + p1);
+                            + "\n\nTime End                 : " + te1
+                            + "\n\nType of Pitch           : " + p1);
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f11.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -120,13 +122,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f21.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -150,13 +153,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f12.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -180,13 +184,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f22.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -209,13 +214,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f13.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -238,13 +244,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f23.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -268,13 +275,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f14.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -297,13 +305,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f24.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -326,13 +335,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f15.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -355,13 +365,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f25.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -384,13 +395,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f16.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -413,13 +425,14 @@ public class List_Item_A extends ArrayAdapter<String>{
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
+                            f26.setBackgroundColor(Color.BLUE);
                             book_pitch();
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+                        public void onClick(DialogInterface dialogInterface, int j) {
 
                         }
                     });
@@ -427,52 +440,62 @@ public class List_Item_A extends ArrayAdapter<String>{
                     dialog.show();
                 }
             });
+//            Log.d("123", "getView: "+position+ values.get(position).getPitch()+ "\n"+ values.get(position).getT11()+ "\n"+ Table_Field_value.time00[position]);
+//            if (values.get(position).getT11().equals("07:00:00") ) {
+//                if(values.get(position).getPitch() == 100) {
+//                    f11.setBackgroundColor(Color.RED);
+//                    f21.setBackgroundColor(Color.RED);
+//                }
+//                if (values.get(position).getPitch() == 101){
+//                    f11.setBackgroundColor(Color.RED);
+//                    f21.setBackgroundColor(Color.RED);
+//                }
+//                if(values.get(position).getPitch() == 102) {
+//                    f11.setBackgroundColor(Color.RED);
+//                    f21.setBackgroundColor(Color.RED);
+//                }
+//                if (values.get(position).getPitch() == 10){
+//                    f11.setBackgroundColor(Color.RED);
+//                    f21.setBackgroundColor(Color.RED);
+//                }
+//            }
 
-//            if (values.get(position).getT11() != null) {
-//                f11.setBackgroundColor(Color.BLACK);
-////                f21.setBackgroundColor(Color.BLACK);
+//            if (values.get(position).getT11().equals("09:00:00") ) {
+//                f11.setBackgroundColor(Color.RED);
+//                f21.setBackgroundColor(Color.RED);
 //            }
-//            if(values.get(position).getE11()!= null && values.get(position).getS21() != null){
-//                f21.setBackgroundColor(Color.BLACK);
+//            if (values.get(position).getPitch() == 100 && values.get(position).getT11().equals("13:00:00") ) {
+//                f11.setBackgroundColor(Color.RED);
+//                f21.setBackgroundColor(Color.RED);
 //            }
-//            if (values.get(position).getF21() != null && values.get(position).getF22() != null) {
-//                Log.d("1111", "getView: "+values.get(position).getF11());
-//                Log.d("2222", "getView: "+position);
-//                f12.setBackgroundColor(Color.BLACK);
-//                f22.setBackgroundColor(Color.BLACK);
+
+
+
+//            if (values.get(position).getPitch() == 101 && values.get(position).getT12() == Table_Field_value.time00[position] ) {
+//                f12.setBackgroundColor(Color.RED);
+//                f22.setBackgroundColor(Color.RED);
 //            }
-//             if(){
-//                f21.setBackgroundColor(Color.BLACK);
+//            if(values.get(position).getPitch() == 102 && values.get(0).getT13() != ts5 ){
+//                f13.setBackgroundColor(Color.RED);
+//                f23.setBackgroundColor(Color.RED);
 //            }
-//             if(values.get(position).getF12() != null){
-//                f12.setBackgroundColor(Color.BLACK);
+//            if (values.get(0).getPitch() != 103 && values.get(position).getT14() != ts7 && values.get(position).getT24() != ts8) {
+//                f14.setBackgroundColor(Color.RED);
 //            }
-//             if(values.get(position).getF22() != null){
-//                f22.setBackgroundColor(Color.BLACK);
+//            if(values.get(0).getPitch() != 103 && values.get(position).getT24() != ts8){
+//                f24.setBackgroundColor(Color.RED);
 //            }
-//             if (values.get(position).getF13() != null) {
-//                f13.setBackgroundColor(Color.BLACK);
+//            if(values.get(0).getPitch() != 104 && values.get(position).getT15() != ts9 && values.get(position).getT25() != ts10){
+//                f15.setBackgroundColor(Color.RED);
 //            }
-//             if(values.get(position).getF23() != null){
-//                f23.setBackgroundColor(Color.BLACK);
+//            if(values.get(0).getPitch() != 104 && values.get(position).getT25() != ts10){
+//                f25.setBackgroundColor(Color.RED);
 //            }
-//             if(values.get(position).getF14() != null){
-//                f14.setBackgroundColor(Color.BLACK);
+//            if (values.get(0).getPitch() != 105 && values.get(position).getT16() != ts11 && values.get(position).getT26() != ts12) {
+//                f16.setBackgroundColor(Color.RED);
 //            }
-//             if(values.get(position).getF24() != null){
-//                f24.setBackgroundColor(Color.BLACK);
-//            }
-//             if (values.get(position).getF15() != null) {
-//                f15.setBackgroundColor(Color.BLACK);
-//            }
-//             if(values.get(position).getF25() != null){
-//                f25.setBackgroundColor(Color.BLACK);
-//            }
-//             if(values.get(position).getF16() != null){
-//                f16.setBackgroundColor(Color.BLACK);
-//            }
-//             if(values.get(position).getF26() != null){
-//                f26.setBackgroundColor(Color.BLACK);
+//            if(values.get(0).getPitch() != 105 && values.get(position).getT26() != ts12) {
+//                f26.setBackgroundColor(Color.RED);
 //            }
 
         } catch (Exception e){
@@ -492,91 +515,92 @@ public class List_Item_A extends ArrayAdapter<String>{
         customer_id = sharedPreferences.getString("customer_id", "");
         List_Ball_Field_A a = new List_Ball_Field_A();
         day = a.day;
+        if (i==1){
+            field_id = 100;
+            timeStart = ts1;
+            timeEnd = te1;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts1+ "\n"+te1, Toast.LENGTH_LONG).show();
+        }
+
+        if(i==2){
+            field_id = 100;
+            timeStart = ts2;
+            timeEnd = te2;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts2+ "\n"+te2, Toast.LENGTH_SHORT).show();
+        }
+        if (i==3){
+            field_id = 101;
+            timeStart = ts3;
+            timeEnd = te3;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts3+ "\n"+te3, Toast.LENGTH_SHORT).show();
+        }
+
+        if (i==4){
+            field_id = 101;
+            timeStart = ts4;
+            timeEnd = te4;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts4+ "\n"+te4, Toast.LENGTH_SHORT).show();
+        }
+        if (i==5){
+            field_id = 102;
+            timeStart = ts5;
+            timeEnd = te5;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts5+ "\n"+te5, Toast.LENGTH_SHORT).show();
+        }
+        if (i==6){
+            field_id = 102;
+            timeStart = ts6;
+            timeEnd = te6;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts6+ "\n"+te6, Toast.LENGTH_SHORT).show();
+        }
+        if (i==7){
+            field_id = 103;
+            timeStart = ts7;
+            timeEnd = te7;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts7+ "\n"+te7, Toast.LENGTH_SHORT).show();
+        }
+        if (i==8){
+            field_id = 103;
+            timeStart = ts8;
+            timeEnd = te8;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts8+ "\n"+te8, Toast.LENGTH_SHORT).show();
+        }
+        if (i==9){
+            field_id = 104;
+            timeStart = ts9;
+            timeEnd = te9;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts9+ "\n"+te9, Toast.LENGTH_SHORT).show();
+        }
+        if (i==10){
+            field_id = 104;
+            timeStart = ts10;
+            timeEnd = te10;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts10+ "\n"+te10, Toast.LENGTH_SHORT).show();
+        }
+        if (i==11){
+            field_id = 105;
+            timeStart = ts11;
+            timeEnd = te11;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts11+ "\n"+te11, Toast.LENGTH_SHORT).show();
+        }
+        if (i==12){
+            field_id = 105;
+            timeStart = ts12;
+            timeEnd = te12;
+//                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts12+ "\n"+te12, Toast.LENGTH_SHORT).show();
+        }
+//        Toast.makeText(getContext(), ""+field_id +"\n" + customer_id+ "\n"+ timeStart+ "\n"+ timeEnd, Toast.LENGTH_SHORT).show();
 
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/reserve/add";
+        String url = getContext().getString(R.string.url_reservationAdd);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Gson gson = new Gson();
-                Toast.makeText(getContext(),response,Toast.LENGTH_LONG).show();
-                if (response.contains("true")){
-                    if (i==1){
-                        field_id = 100;
-                        timeStart = ts1;
-                        timeEnd = te1;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts1+ "\n"+te1, Toast.LENGTH_SHORT).show();
-                    }
-
-                    if(i==2){
-                        field_id = 100;
-                        timeStart = ts2;
-                        timeEnd = te2;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts2+ "\n"+te2, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==3){
-                        field_id = 101;
-                        timeStart = ts3;
-                        timeEnd = te3;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts3+ "\n"+te3, Toast.LENGTH_SHORT).show();
-                    }
-
-                    if (i==4){
-                        field_id = 101;
-                        timeStart = ts4;
-                        timeEnd = te4;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts4+ "\n"+te4, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==5){
-                        field_id = 102;
-                        timeStart = ts5;
-                        timeEnd = te5;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts5+ "\n"+te5, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==6){
-                        field_id = 102;
-                        timeStart = ts6;
-                        timeEnd = te6;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts6+ "\n"+te6, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==7){
-                        field_id = 103;
-                        timeStart = ts7;
-                        timeEnd = te7;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts7+ "\n"+te7, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==8){
-                        field_id = 103;
-                        timeStart = ts8;
-                        timeEnd = te8;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts8+ "\n"+te8, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==9){
-                        field_id = 104;
-                        timeStart = ts9;
-                        timeEnd = te9;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts9+ "\n"+te9, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==10){
-                        field_id = 104;
-                        timeStart = ts10;
-                        timeEnd = te10;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts10+ "\n"+te10, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==11){
-                        field_id = 105;
-                        timeStart = ts11;
-                        timeEnd = te11;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts11+ "\n"+te11, Toast.LENGTH_SHORT).show();
-                    }
-                    if (i==12){
-                        field_id = 105;
-                        timeStart = ts12;
-                        timeEnd = te12;
-                        Toast.makeText(getContext(),""+field_id+"\n"+customer_id + "\n"+day+"\n"+ts12+ "\n"+te12, Toast.LENGTH_SHORT).show();
-                    }
+                LoginResponse login = gson.fromJson(response, LoginResponse.class);
+                if (login.isStatus()){
+                    Toast.makeText(getContext(), "Message: " + login.getMsg(), Toast.LENGTH_SHORT).show();
                 }else {
-                    LoginResponse login = gson.fromJson(response, LoginResponse.class);
                     Toast.makeText(getContext(), "Message: " + login.getMsg(), Toast.LENGTH_SHORT).show();
                 }
 
@@ -592,11 +616,11 @@ public class List_Item_A extends ArrayAdapter<String>{
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 HashMap<String, String> hashMap = new HashMap<>();
-                hashMap.put("field_id", ""+ field_id);
+                hashMap.put("field_id", String.valueOf(field_id));
                 hashMap.put("customer_id", customer_id);
                 hashMap.put("reserve_date", day);
-                hashMap.put("reserve_start_time", ""+timeStart);
-                hashMap.put("reserve_end_time", ""+timeEnd);
+                hashMap.put("reserve_start_time", timeStart);
+                hashMap.put("reserve_end_time", timeEnd);
                 return hashMap;
             }
         }

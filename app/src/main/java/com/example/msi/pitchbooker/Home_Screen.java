@@ -86,7 +86,7 @@ public class Home_Screen extends Fragment implements View.OnClickListener {
 
     private void ballfield() {
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/location/list/field/reservation/today";
+        String url = getString(R.string.url_reservationToday);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

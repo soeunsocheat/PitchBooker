@@ -71,7 +71,7 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener{
     }
     private void Login() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://pitchbooker.gicitc.info/customer/login_username";
+        String url = getString(R.string.url_loginAcc);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

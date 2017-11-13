@@ -66,7 +66,7 @@ public class List_Ball_Field_D extends Fragment {
         Intent date = getActivity().getIntent();
         day = date.getStringExtra("date");
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/location/list/field/reservation/on_date";
+        String url = getString(R.string.url_reservationOnDay);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

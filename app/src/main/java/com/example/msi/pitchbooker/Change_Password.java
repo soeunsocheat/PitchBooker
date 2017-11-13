@@ -59,7 +59,7 @@ public class Change_Password extends AppCompatActivity {
 
     private void change(){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://pitchbooker.gicitc.info/customer/change/password";
+        String url = getString(R.string.url_changePWD);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

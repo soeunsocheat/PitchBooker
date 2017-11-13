@@ -69,7 +69,7 @@ public class List_Ball_Field_A extends Fragment {
         Intent date = getActivity().getIntent();
         day = date.getStringExtra("date");
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/location/list/field/reservation/on_date";
+        String url = getString(R.string.url_reservationOnDay);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -80,6 +80,7 @@ public class List_Ball_Field_A extends Fragment {
                 for (int i = 0; i < fields.size(); i++) {
                     for (int j = 0; j < fields.get(i).getReservations().size(); j++){
                         Table_Field_value table_field_value = new Table_Field_value();
+                        table_field_value.setPitch(fields.get(i).getReservations().get(j).getField_id());
                         table_field_value.setT11(fields.get(i).getReservations().get(j).getReserve_start_time());
                         table_field_value.setT21(fields.get(i).getReservations().get(j).getReserve_start_time());
                         table_field_value.setT12(fields.get(i).getReservations().get(j).getReserve_start_time());

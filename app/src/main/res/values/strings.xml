@@ -30,5 +30,17 @@
     <string name="title_activity_list__ball__field">List_Ball_Field</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
+    --Data in application
     <string name="data_app">Data_App</string>
+
+    --URL--
+    <string name="url_register">http://192.168.56.1:8000/customer/register</string>
+    <string name="url_loginAcc">http://192.168.56.1:8000/customer/login_username</string>
+    <string name="url_changePWD">http://192.168.56.1:8000/customer/change/password</string>
+    <string name="url_fillFeedback">http://192.168.56.1:8000/feedback/add</string>
+    <string name="url_reservationToday">http://192.168.56.1:8000/location/list/field/reservation/today</string>
+    <string name="url_reservationOnDay">http://192.168.56.1:8000/location/list/field/reservation/on_date</string>
+    <string name="url_reservationList">http://192.168.56.1:8000/customer/get/reserve_list</string>
+    <string name="url_reservationAdd">http://192.168.56.1:8000/reserve/add</string>
+
 </resources>

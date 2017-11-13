@@ -52,7 +52,7 @@ public class List_Sport_Club extends FragmentActivity {
 
     private void listSportClub() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://pitchbooker.gicitc.info/location/list/field/reservation/on_date";
+        String url = getString(R.string.url_reservationOnDay);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

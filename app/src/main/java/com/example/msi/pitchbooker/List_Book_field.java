@@ -68,7 +68,7 @@ public class List_Book_field extends ArrayAdapter<String > {
 
     private void ListBook() {
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info//customer/get/reserve_list";
+        String url = getContext().getString(R.string.url_reservationList);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

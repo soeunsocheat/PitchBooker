@@ -8,6 +8,7 @@ import java.sql.Time;
 
 public class Table_Field_value {
     private String time;
+    private long pitch;
     private String T11;
     private String T21;
     private String T12;
@@ -33,6 +34,15 @@ public class Table_Field_value {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+
+    public long getPitch() {
+        return pitch;
+    }
+
+    public void setPitch(long pitch) {
+        this.pitch = pitch;
     }
 
     public String getT11() {

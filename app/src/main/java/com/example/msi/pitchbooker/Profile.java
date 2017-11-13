@@ -45,11 +45,11 @@ import java.util.Map;
  */
 public class Profile extends Fragment {
     TextView tv_username;
-    TextView tv_date1,tv_date2,tv_date3,tv_date4,tv_date5,tv_date6,tv_date7,tv_date8,tv_date9,tv_date10;
-    TextView sportclub1,sportclub2,sportclub3,sportclub4,sportclub5,sportclub6,sportclub7,sportclub8,sportclub9,sportclub10;
-    TextView ballfield1,ballfield2,ballfield3,ballfield4,ballfield5,ballfield6,ballfield7,ballfield8,ballfield9,ballfield10;
-    TextView timeStart1,timeStart2,timeStart3,timeStart4,timeStart5,timeStart6,timeStart7,timeStart8,timeStart9,timeStart10;
-    TextView timeEnd1,timeEnd2,timeEnd3,timeEnd4,timeEnd5,timeEnd6,timeEnd7,timeEnd8,timeEnd9,timeEnd10;
+    TextView tv_date1,tv_date2,tv_date3,tv_date4,tv_date5,tv_date6,tv_date7,tv_date8,tv_date9,tv_date10,tv_date11,tv_date12,tv_date13,tv_date14,tv_date15;
+    TextView sportclub1,sportclub2,sportclub3,sportclub4,sportclub5,sportclub6,sportclub7,sportclub8,sportclub9,sportclub10,sportclub11,sportclub12,sportclub13,sportclub14,sportclub15;
+    TextView ballfield1,ballfield2,ballfield3,ballfield4,ballfield5,ballfield6,ballfield7,ballfield8,ballfield9,ballfield10,ballfield11,ballfield12,ballfield13,ballfield14,ballfield15;
+    TextView timeStart1,timeStart2,timeStart3,timeStart4,timeStart5,timeStart6,timeStart7,timeStart8,timeStart9,timeStart10,timeStart11,timeStart12,timeStart13,timeStart14,timeStart15;
+    TextView timeEnd1,timeEnd2,timeEnd3,timeEnd4,timeEnd5,timeEnd6,timeEnd7,timeEnd8,timeEnd9,timeEnd10,timeEnd11,timeEnd12,timeEnd13,timeEnd14,timeEnd15;
 
     static String customer_id;
     String date;
@@ -76,6 +76,11 @@ public class Profile extends Fragment {
         tv_date8 = (TextView)view.findViewById(R.id.date8);
         tv_date9 = (TextView)view.findViewById(R.id.date9);
         tv_date10 = (TextView)view.findViewById(R.id.date10);
+        tv_date11 = (TextView)view.findViewById(R.id.date11);
+        tv_date12 = (TextView)view.findViewById(R.id.date12);
+        tv_date13 = (TextView)view.findViewById(R.id.date13);
+        tv_date14 = (TextView)view.findViewById(R.id.date14);
+        tv_date15 = (TextView)view.findViewById(R.id.date15);
 
         // list all sportclubs
         sportclub1 = (TextView)view.findViewById(R.id.sportclub1);
@@ -88,6 +93,11 @@ public class Profile extends Fragment {
         sportclub8 = (TextView)view.findViewById(R.id.sportclub8);
         sportclub9 = (TextView)view.findViewById(R.id.sportclub9);
         sportclub10 = (TextView)view.findViewById(R.id.sportclub10);
+        sportclub11 = (TextView)view.findViewById(R.id.sportclub11);
+        sportclub12 = (TextView)view.findViewById(R.id.sportclub12);
+        sportclub13 = (TextView)view.findViewById(R.id.sportclub13);
+        sportclub14 = (TextView)view.findViewById(R.id.sportclub14);
+        sportclub15 = (TextView)view.findViewById(R.id.sportclub15);
 
         // list all ballfield
         ballfield1 = (TextView)view.findViewById(R.id.ballfield1);
@@ -100,6 +110,11 @@ public class Profile extends Fragment {
         ballfield8 = (TextView)view.findViewById(R.id.ballfield8);
         ballfield9 = (TextView)view.findViewById(R.id.ballfield9);
         ballfield10 = (TextView)view.findViewById(R.id.ballfield10);
+        ballfield11 = (TextView)view.findViewById(R.id.ballfield11);
+        ballfield12 = (TextView)view.findViewById(R.id.ballfield12);
+        ballfield13 = (TextView)view.findViewById(R.id.ballfield13);
+        ballfield14 = (TextView)view.findViewById(R.id.ballfield14);
+        ballfield15 = (TextView)view.findViewById(R.id.ballfield15);
 
         // list all time start
         timeStart1 = (TextView)view.findViewById(R.id.timestart1);
@@ -112,6 +127,11 @@ public class Profile extends Fragment {
         timeStart8 = (TextView)view.findViewById(R.id.timestart8);
         timeStart9 = (TextView)view.findViewById(R.id.timestart9);
         timeStart10 = (TextView)view.findViewById(R.id.timestart10);
+        timeStart11 = (TextView)view.findViewById(R.id.timestart11);
+        timeStart12 = (TextView)view.findViewById(R.id.timestart12);
+        timeStart13 = (TextView)view.findViewById(R.id.timestart13);
+        timeStart14 = (TextView)view.findViewById(R.id.timestart14);
+        timeStart15 = (TextView)view.findViewById(R.id.timestart15);
 
         // list all time end
         timeEnd1 = (TextView)view.findViewById(R.id.timeend1);
@@ -124,6 +144,11 @@ public class Profile extends Fragment {
         timeEnd8 = (TextView)view.findViewById(R.id.timeend8);
         timeEnd9 = (TextView)view.findViewById(R.id.timeend9);
         timeEnd10 = (TextView)view.findViewById(R.id.timeend10);
+        timeEnd11 = (TextView)view.findViewById(R.id.timeend11);
+        timeEnd12 = (TextView)view.findViewById(R.id.timeend12);
+        timeEnd13 = (TextView)view.findViewById(R.id.timeend13);
+        timeEnd14 = (TextView)view.findViewById(R.id.timeend14);
+        timeEnd15 = (TextView)view.findViewById(R.id.timeend15);
 
         listBookField();
         return view;
@@ -131,7 +156,7 @@ public class Profile extends Fragment {
 
     private void listBookField() {
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url = "http://pitchbooker.gicitc.info/customer/get/reserve_list";
+        String url = getString(R.string.url_reservationList);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -1064,6 +1089,451 @@ public class Profile extends Fragment {
                             }
                             if (fied_id == 405){
                                 ballfield10.setText("D 6");
+                            }
+                        }
+                    }
+                    if (i == 10){
+                        tv_date11.setText(strdate);
+                        timeStart11.setText(ts);
+                        timeEnd11.setText(te);
+                        if (fied_id == 100 || fied_id == 101 || fied_id == 102 || fied_id == 103 || fied_id == 104 || fied_id == 105){
+                            sportclub11.setText("Location A");
+                            if (fied_id == 100){
+                                ballfield11.setText("A 1");
+                            }
+                            if (fied_id == 101){
+                                ballfield11.setText("A 2");
+                            }
+                            if (fied_id == 102){
+                                ballfield11.setText("A 3");
+                            }
+                            if (fied_id == 103){
+                                ballfield11.setText("A 4");
+                            }
+                            if (fied_id == 104){
+                                ballfield11.setText("A 5");
+                            }
+                            if (fied_id == 105){
+                                ballfield11.setText("A 6");
+                            }
+                        }
+                        if (fied_id == 200 || fied_id == 201 || fied_id == 202 || fied_id == 203 || fied_id == 204 || fied_id == 205){
+                            sportclub11.setText("Location B");
+                            if (fied_id == 200){
+                                ballfield11.setText("B 1");
+                            }
+                            if (fied_id == 201){
+                                ballfield11.setText("B 2");
+                            }
+                            if (fied_id == 202){
+                                ballfield11.setText("B 3");
+                            }
+                            if (fied_id == 203){
+                                ballfield11.setText("B 4");
+                            }
+                            if (fied_id == 204){
+                                ballfield11.setText("B 5");
+                            }
+                            if (fied_id == 205){
+                                ballfield11.setText("B 6");
+                            }
+                        }
+                        if (fied_id == 300 || fied_id == 301 || fied_id == 302 || fied_id == 303 || fied_id == 304 || fied_id == 305){
+                            sportclub11.setText("Location C");
+                            if (fied_id == 300){
+                                ballfield11.setText("C 1");
+                            }
+                            if (fied_id == 301){
+                                ballfield11.setText("C 2");
+                            }
+                            if (fied_id == 302){
+                                ballfield11.setText("C 3");
+                            }
+                            if (fied_id == 303){
+                                ballfield11.setText("C 4");
+                            }
+                            if (fied_id == 304){
+                                ballfield11.setText("C 5");
+                            }
+                            if (fied_id == 305){
+                                ballfield11.setText("C 6");
+                            }
+                        }
+                        if (fied_id == 400 || fied_id == 401 || fied_id == 402 || fied_id == 403 || fied_id == 404 || fied_id == 405){
+                            sportclub11.setText("Location D");
+                            if (fied_id == 400){
+                                ballfield11.setText("D 1");
+                            }
+                            if (fied_id == 401){
+                                ballfield11.setText("D 2");
+                            }
+                            if (fied_id == 402){
+                                ballfield11.setText("D 3");
+                            }
+                            if (fied_id == 403){
+                                ballfield11.setText("D 4");
+                            }
+                            if (fied_id == 404){
+                                ballfield11.setText("D 5");
+                            }
+                            if (fied_id == 405){
+                                ballfield11.setText("D 6");
+                            }
+                        }
+                    }
+                    if (i == 11){
+                        tv_date12.setText(strdate);
+                        timeStart12.setText(ts);
+                        timeEnd12.setText(te);
+                        if (fied_id == 100 || fied_id == 101 || fied_id == 102 || fied_id == 103 || fied_id == 104 || fied_id == 105){
+                            sportclub12.setText("Location A");
+                            if (fied_id == 100){
+                                ballfield12.setText("A 1");
+                            }
+                            if (fied_id == 101){
+                                ballfield12.setText("A 2");
+                            }
+                            if (fied_id == 102){
+                                ballfield12.setText("A 3");
+                            }
+                            if (fied_id == 103){
+                                ballfield12.setText("A 4");
+                            }
+                            if (fied_id == 104){
+                                ballfield12.setText("A 5");
+                            }
+                            if (fied_id == 105){
+                                ballfield12.setText("A 6");
+                            }
+                        }
+                        if (fied_id == 200 || fied_id == 201 || fied_id == 202 || fied_id == 203 || fied_id == 204 || fied_id == 205){
+                            sportclub12.setText("Location B");
+                            if (fied_id == 200){
+                                ballfield12.setText("B 1");
+                            }
+                            if (fied_id == 201){
+                                ballfield12.setText("B 2");
+                            }
+                            if (fied_id == 202){
+                                ballfield12.setText("B 3");
+                            }
+                            if (fied_id == 203){
+                                ballfield12.setText("B 4");
+                            }
+                            if (fied_id == 204){
+                                ballfield12.setText("B 5");
+                            }
+                            if (fied_id == 205){
+                                ballfield12.setText("B 6");
+                            }
+                        }
+                        if (fied_id == 300 || fied_id == 301 || fied_id == 302 || fied_id == 303 || fied_id == 304 || fied_id == 305){
+                            sportclub12.setText("Location C");
+                            if (fied_id == 300){
+                                ballfield12.setText("C 1");
+                            }
+                            if (fied_id == 301){
+                                ballfield12.setText("C 2");
+                            }
+                            if (fied_id == 302){
+                                ballfield12.setText("C 3");
+                            }
+                            if (fied_id == 303){
+                                ballfield12.setText("C 4");
+                            }
+                            if (fied_id == 304){
+                                ballfield12.setText("C 5");
+                            }
+                            if (fied_id == 305){
+                                ballfield12.setText("C 6");
+                            }
+                        }
+                        if (fied_id == 400 || fied_id == 401 || fied_id == 402 || fied_id == 403 || fied_id == 404 || fied_id == 405){
+                            sportclub12.setText("Location D");
+                            if (fied_id == 400){
+                                ballfield12.setText("D 1");
+                            }
+                            if (fied_id == 401){
+                                ballfield12.setText("D 2");
+                            }
+                            if (fied_id == 402){
+                                ballfield12.setText("D 3");
+                            }
+                            if (fied_id == 403){
+                                ballfield12.setText("D 4");
+                            }
+                            if (fied_id == 404){
+                                ballfield12.setText("D 5");
+                            }
+                            if (fied_id == 405){
+                                ballfield12.setText("D 6");
+                            }
+                        }
+                    }
+                    if (i == 12){
+                        tv_date13.setText(strdate);
+                        timeStart13.setText(ts);
+                        timeEnd13.setText(te);
+                        if (fied_id == 100 || fied_id == 101 || fied_id == 102 || fied_id == 103 || fied_id == 104 || fied_id == 105){
+                            sportclub13.setText("Location A");
+                            if (fied_id == 100){
+                                ballfield13.setText("A 1");
+                            }
+                            if (fied_id == 101){
+                                ballfield13.setText("A 2");
+                            }
+                            if (fied_id == 102){
+                                ballfield13.setText("A 3");
+                            }
+                            if (fied_id == 103){
+                                ballfield13.setText("A 4");
+                            }
+                            if (fied_id == 104){
+                                ballfield13.setText("A 5");
+                            }
+                            if (fied_id == 105){
+                                ballfield13.setText("A 6");
+                            }
+                        }
+                        if (fied_id == 200 || fied_id == 201 || fied_id == 202 || fied_id == 203 || fied_id == 204 || fied_id == 205){
+                            sportclub13.setText("Location B");
+                            if (fied_id == 200){
+                                ballfield13.setText("B 1");
+                            }
+                            if (fied_id == 201){
+                                ballfield13.setText("B 2");
+                            }
+                            if (fied_id == 202){
+                                ballfield13.setText("B 3");
+                            }
+                            if (fied_id == 203){
+                                ballfield13.setText("B 4");
+                            }
+                            if (fied_id == 204){
+                                ballfield13.setText("B 5");
+                            }
+                            if (fied_id == 205){
+                                ballfield13.setText("B 6");
+                            }
+                        }
+                        if (fied_id == 300 || fied_id == 301 || fied_id == 302 || fied_id == 303 || fied_id == 304 || fied_id == 305){
+                            sportclub13.setText("Location C");
+                            if (fied_id == 300){
+                                ballfield13.setText("C 1");
+                            }
+                            if (fied_id == 301){
+                                ballfield13.setText("C 2");
+                            }
+                            if (fied_id == 302){
+                                ballfield13.setText("C 3");
+                            }
+                            if (fied_id == 303){
+                                ballfield13.setText("C 4");
+                            }
+                            if (fied_id == 304){
+                                ballfield13.setText("C 5");
+                            }
+                            if (fied_id == 305){
+                                ballfield13.setText("C 6");
+                            }
+                        }
+                        if (fied_id == 400 || fied_id == 401 || fied_id == 402 || fied_id == 403 || fied_id == 404 || fied_id == 405){
+                            sportclub13.setText("Location D");
+                            if (fied_id == 400){
+                                ballfield13.setText("D 1");
+                            }
+                            if (fied_id == 401){
+                                ballfield13.setText("D 2");
+                            }
+                            if (fied_id == 402){
+                                ballfield13.setText("D 3");
+                            }
+                            if (fied_id == 403){
+                                ballfield13.setText("D 4");
+                            }
+                            if (fied_id == 404){
+                                ballfield13.setText("D 5");
+                            }
+                            if (fied_id == 405){
+                                ballfield13.setText("D 6");
+                            }
+                        }
+                    }
+                    if (i == 13){
+                        tv_date14.setText(strdate);
+                        timeStart14.setText(ts);
+                        timeEnd14.setText(te);
+                        if (fied_id == 100 || fied_id == 101 || fied_id == 102 || fied_id == 103 || fied_id == 104 || fied_id == 105){
+                            sportclub14.setText("Location A");
+                            if (fied_id == 100){
+                                ballfield14.setText("A 1");
+                            }
+                            if (fied_id == 101){
+                                ballfield14.setText("A 2");
+                            }
+                            if (fied_id == 102){
+                                ballfield14.setText("A 3");
+                            }
+                            if (fied_id == 103){
+                                ballfield14.setText("A 4");
+                            }
+                            if (fied_id == 104){
+                                ballfield14.setText("A 5");
+                            }
+                            if (fied_id == 105){
+                                ballfield14.setText("A 6");
+                            }
+                        }
+                        if (fied_id == 200 || fied_id == 201 || fied_id == 202 || fied_id == 203 || fied_id == 204 || fied_id == 205){
+                            sportclub14.setText("Location B");
+                            if (fied_id == 200){
+                                ballfield14.setText("B 1");
+                            }
+                            if (fied_id == 201){
+                                ballfield14.setText("B 2");
+                            }
+                            if (fied_id == 202){
+                                ballfield14.setText("B 3");
+                            }
+                            if (fied_id == 203){
+                                ballfield14.setText("B 4");
+                            }
+                            if (fied_id == 204){
+                                ballfield14.setText("B 5");
+                            }
+                            if (fied_id == 205){
+                                ballfield14.setText("B 6");
+                            }
+                        }
+                        if (fied_id == 300 || fied_id == 301 || fied_id == 302 || fied_id == 303 || fied_id == 304 || fied_id == 305){
+                            sportclub14.setText("Location C");
+                            if (fied_id == 300){
+                                ballfield14.setText("C 1");
+                            }
+                            if (fied_id == 301){
+                                ballfield14.setText("C 2");
+                            }
+                            if (fied_id == 302){
+                                ballfield14.setText("C 3");
+                            }
+                            if (fied_id == 303){
+                                ballfield14.setText("C 4");
+                            }
+                            if (fied_id == 304){
+                                ballfield14.setText("C 5");
+                            }
+                            if (fied_id == 305){
+                                ballfield14.setText("C 6");
+                            }
+                        }
+                        if (fied_id == 400 || fied_id == 401 || fied_id == 402 || fied_id == 403 || fied_id == 404 || fied_id == 405){
+                            sportclub14.setText("Location D");
+                            if (fied_id == 400){
+                                ballfield14.setText("D 1");
+                            }
+                            if (fied_id == 401){
+                                ballfield14.setText("D 2");
+                            }
+                            if (fied_id == 402){
+                                ballfield14.setText("D 3");
+                            }
+                            if (fied_id == 403){
+                                ballfield14.setText("D 4");
+                            }
+                            if (fied_id == 404){
+                                ballfield14.setText("D 5");
+                            }
+                            if (fied_id == 405){
+                                ballfield14.setText("D 6");
+                            }
+                        }
+                    }
+                    if (i == 14){
+                        tv_date15.setText(strdate);
+                        timeStart15.setText(ts);
+                        timeEnd15.setText(te);
+                        if (fied_id == 100 || fied_id == 101 || fied_id == 102 || fied_id == 103 || fied_id == 104 || fied_id == 105){
+                            sportclub15.setText("Location A");
+                            if (fied_id == 100){
+                                ballfield15.setText("A 1");
+                            }
+                            if (fied_id == 101){
+                                ballfield15.setText("A 2");
+                            }
+                            if (fied_id == 102){
+                                ballfield15.setText("A 3");
+                            }
+                            if (fied_id == 103){
+                                ballfield5.setText("A 4");
+                            }
+                            if (fied_id == 104){
+                                ballfield15.setText("A 5");
+                            }
+                            if (fied_id == 105){
+                                ballfield15.setText("A 6");
+                            }
+                        }
+                        if (fied_id == 200 || fied_id == 201 || fied_id == 202 || fied_id == 203 || fied_id == 204 || fied_id == 205){
+                            sportclub15.setText("Location B");
+                            if (fied_id == 200){
+                                ballfield15.setText("B 1");
+                            }
+                            if (fied_id == 201){
+                                ballfield15.setText("B 2");
+                            }
+                            if (fied_id == 202){
+                                ballfield15.setText("B 3");
+                            }
+                            if (fied_id == 203){
+                                ballfield15.setText("B 4");
+                            }
+                            if (fied_id == 204){
+                                ballfield15.setText("B 5");
+                            }
+                            if (fied_id == 205){
+                                ballfield15.setText("B 6");
+                            }
+                        }
+                        if (fied_id == 300 || fied_id == 301 || fied_id == 302 || fied_id == 303 || fied_id == 304 || fied_id == 305){
+                            sportclub15.setText("Location C");
+                            if (fied_id == 300){
+                                ballfield15.setText("C 1");
+                            }
+                            if (fied_id == 301){
+                                ballfield15.setText("C 2");
+                            }
+                            if (fied_id == 302){
+                                ballfield15.setText("C 3");
+                            }
+                            if (fied_id == 303){
+                                ballfield15.setText("C 4");
+                            }
+                            if (fied_id == 304){
+                                ballfield15.setText("C 5");
+                            }
+                            if (fied_id == 305){
+                                ballfield15.setText("C 6");
+                            }
+                        }
+                        if (fied_id == 400 || fied_id == 401 || fied_id == 402 || fied_id == 403 || fied_id == 404 || fied_id == 405){
+                            sportclub15.setText("Location D");
+                            if (fied_id == 400){
+                                ballfield15.setText("D 1");
+                            }
+                            if (fied_id == 401){
+                                ballfield15.setText("D 2");
+                            }
+                            if (fied_id == 402){
+                                ballfield15.setText("D 3");
+                            }
+                            if (fied_id == 403){
+                                ballfield15.setText("D 4");
+                            }
+                            if (fied_id == 404){
+                                ballfield15.setText("D 5");
+                            }
+                            if (fied_id == 405){
+                                ballfield15.setText("D 6");
                             }
                         }
                     }
